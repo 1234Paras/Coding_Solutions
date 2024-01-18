@@ -14,3 +14,24 @@ int countDigits(int n){
 	}
 	return count;
 }
+
+//int countDigits(int n)
+/*{
+	int count = 0;
+
+	while(n>0)
+	{
+		int lastDigit = n % 10;
+		count = count + 1;
+		n = n / 10;
+	}
+	return count;
+}*/
+
+//#include<bits/stdc++.h>
+/*int countDigits(int n)
+{
+	int count = (int) (log10(n) + 1);
+}*/
+
+Time Complexity : o(log10(n))
