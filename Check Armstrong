@@ -1,0 +1,19 @@
+bool checkArmstrong(int n){
+	//Write your code here
+
+    int temp = n;
+    int sum = 0;
+    // int revs = 0;
+    while(n!=0)
+    {
+        int ld = n % 10;
+        sum = sum + (ld*ld*ld);
+        n = n / 10;
+       // revs = (revs*10) + ld;
+
+    }
+    if(sum == temp)
+        return true;
+    else
+        return false;
+}
